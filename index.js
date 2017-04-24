@@ -13,7 +13,7 @@ module.exports = function (content) {
       result = source[0];
     }
     else {
-      var style = `require("!!css-loader?sourceMap!sass-loader!stylextract-loader?true!./${path.basename(this.resourcePath)}")`;
+      var style = `require("!!css-loader?sourceMap!sass-loader!react-vue-style-loader?true!./${path.basename(this.resourcePath)}")`;
       preamble = `require(${JSON.stringify(require.resolve('style-loader/addStyles'))})([["${this.resourcePath}", ${style}]]);`;
       result = preamble + code[0] + source[1];
     }
