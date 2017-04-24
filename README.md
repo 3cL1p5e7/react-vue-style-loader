@@ -1,7 +1,7 @@
 # react-vue-style-loader
 Webpack loader.
 For Vue developers, who trying React.
-Write your CSS by "Vue-style" in js or jsx files. Use <style> - tag;
+Write your CSS by "Vue-style" in js or jsx files. Use style-tag;
 Available attributes "lang" are: "sass", "less", "postcss". It's for using css preprocessor's webpack loaders.
 ```
 <style lang="sass">

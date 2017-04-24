@@ -5,7 +5,7 @@ module.exports = function (content) {
 
   var parsed = parseStyleTag(content);
   var result = content;
-  if (parsed.css) {
+  if (parsed && parsed.css) {
     var preamble = '';
     if (query === 'true') {
       result = parsed.css;
