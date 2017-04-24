@@ -1,6 +1,6 @@
 {
   "name": "react-vue-style-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Webpack's loader for writing styles in <style> braces into your .js or .jsx files like a Vue",
   "main": "index.js",
   "scripts": {
