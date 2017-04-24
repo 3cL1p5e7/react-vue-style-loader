@@ -1,0 +1,26 @@
+{
+  "name": "react-vue-style-loader",
+  "version": "0.0.1",
+  "description": "A Webpack's loader for writing styles in <style> braces into your .js or .jsx files like a Vue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3cL1p5e7/react-vue-style-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "css",
+    "jsx",
+    "react",
+    "vue"
+  ],
+  "author": "Roman Belov <3cL1p5e7@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3cL1p5e7/react-vue-style-loader/issues"
+  },
+  "homepage": "https://github.com/3cL1p5e7/react-vue-style-loader#readme"
+}
