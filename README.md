@@ -2,9 +2,12 @@
 Webpack loader.
 For Vue developers, who trying React.
 Write your CSS by "Vue-style" in js or jsx files. Use style-tag;
-Available attributes "lang" are: "sass", "less", "postcss". It's for using css preprocessor's webpack loaders.
+Available attributes "lang" are: "sass", "less", "postcss". It use css preprocessor's webpack loaders.
+
+Example file 'app/modules/modules.js':
 ```
 <style lang="sass">
+  @import '~uikit/theme';
   .calendar-desk {
     background: green;
     color: white;
@@ -33,4 +36,35 @@ export default class CalendarDesk extends Component {
 }
 
 
+```
+webpack.config.js
+```
+module.exports = {
+  context: join(__dirname, 'app'),
+  entry: {
+    app: [
+      './app.js'
+    ]
+  },
+  ...
+  module: {
+    rules: [
+      ...
+      {
+        test: /\.js$/,
+        include: [path.resolve(__dirname, 'app')],
+        exclude: [/node_modules/, /dist/],
+        loader: 'babel-loader!react-vue-style-loader'
+      },
+      ...
+    ]
+  },
+  resolve: {
+    modules: [
+      path.join(__dirname, 'app'), // for import sass variables relative 'app'(root)
+      path.join(__dirname, 'uikit'), // uikit is subdirectory of app, 
+      "node_modules"
+    ]
+  }
+};
 ```
