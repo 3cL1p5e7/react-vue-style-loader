@@ -30,7 +30,7 @@ function parseStyleTag(source) {
     throw "Detected not closed <style> brace!";
   return {
     pre: lang,
-    css: secSplit[0].split('>')[1],
+    css: secSplit[0].substr(secSplit[0].indexOf('>') + 1),
     js: secSplit[1]
   };
 };
