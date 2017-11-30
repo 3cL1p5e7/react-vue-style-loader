@@ -77,4 +77,4 @@ module.exports = {
 
 [webpack.config.json](https://github.com/3cL1p5e7/crm.analytics/blob/crm-1/webpack.config.js)
 
-[using in component](https://github.com/3cL1p5e7/crm.analytics/blob/crm-1/webpack.config.js)
+[using in component](https://github.com/3cL1p5e7/crm.analytics/blob/crm-1/app/modules/calendar/calendar.jsx)
