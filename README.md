@@ -4,7 +4,11 @@ For Vue developers, who trying React.
 Write your CSS by "Vue-style" in js or jsx files. Use style-tag;
 Available attributes "lang" are: "sass", "less", "postcss". It use css preprocessor's webpack loaders.
 
-Example file 'app/modules/modules.js':
+WARNING:
+Default used loaders inside are `style-loader` and `css-loader`.
+If you want to use e.g. SASS, please, run in you repository `npm install --save-dev sass-loader`
+
+## Example file 'app/modules/modules.js':
 ```
 <style lang="sass">
   @import '~uikit/theme';
@@ -37,7 +41,7 @@ export default class CalendarDesk extends Component {
 
 
 ```
-webpack.config.js
+## webpack.config.js
 ```
 module.exports = {
   context: join(__dirname, 'app'),
@@ -68,3 +72,9 @@ module.exports = {
   }
 };
 ```
+
+## Live examples:
+
+[webpack.config.json](https://github.com/3cL1p5e7/crm.analytics/blob/crm-1/webpack.config.js)
+
+[using in component](https://github.com/3cL1p5e7/crm.analytics/blob/crm-1/webpack.config.js)
